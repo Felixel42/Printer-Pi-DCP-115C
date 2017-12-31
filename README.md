@@ -1,6 +1,9 @@
 # Printer-Pi-DCP-115C
 Cups network printserver with a Raspberry Pi 2/3, Brother DCP-115C and 433Mhz wireless sockets. With the following upgrade my old reliable Brother has now basic network printer functionalities and is more environmentally friendly.
 
+## What does this documention provide ?
+It is more a collection of sources I have used to build this project than an exact fitting step by step manual. However maybe this can help someone to setup their old printer too.
+
 ## Getting Started
 You should have some basic experience in creating projects with a Raspberry Pi, Linux, GPIO wiring and the related stuff. I would **not** recommend to try this as your first project. The most difficult part was to get the Brother DCP-115C running on a raspberry Pi because there are no drivers as ARM binaries from Brother available, only x86.  
 
@@ -12,12 +15,18 @@ You should have some basic experience in creating projects with a Raspberry Pi, 
 * **female-female jumper wires**, to connect the Pi with sender and receiver
 
 ### Prerequisites
-* Raspberry Pi is running with an actual version of Raspbian Jessie and is connected to internet and your local network.
+* Your Raspberry Pi is running with an actual version of Raspbian Jessie, is connected to the internet and your local network.
+* 
+  *
 
+## Usage
+
+## Contributing/Support
+If you have any additions or problems with this guide, just open an issue or send me a pm.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
