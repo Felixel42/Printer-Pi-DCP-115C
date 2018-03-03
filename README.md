@@ -102,6 +102,11 @@ crontab -e
 Now everything is ready to start printing. 
 
 ## Usage
+**Linux/Ubuntu:**
+Depending on the cups settings, I experienced that Ubuntu worked out of the box with "ipps"
+
+**Windows:**
+
 
 ## Contributing/Support
 If you have any additions or problems regarding this guide, just open an issue or send me a pm.
