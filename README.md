@@ -18,7 +18,7 @@ You should have some basic experience in creating projects with a Raspberry Pi, 
 * Raspberry Pi is running with an actual version of Raspbian Jessie, is connected to the internet and your local network.
 * Cups is installed and running with your printer (means network printing is possible)
   * [Here](https://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/) is a good guide on how to setup cups and make a printer availabe in a local network
-  * For my Brother printer I followed [this](https://www.lhinderberger.de/pi/2016/01/27/raspberry-pi-binary-x86-drivers.html) guide  which is unfortunately not available anymore. Instead [this](https://superuser.com/questions/781454/debian-arm-and-brother-dcp195c-with-cups) should be fine and maybe [this](https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=127401) can help too.
+  * For my Brother printer I followed [this](https://www.lhinderberger.de/pi/2016/01/27/raspberry-pi-binary-x86-drivers.html) guide  which is unfortunately not available anymore. Instead [this](https://superuser.com/questions/781454/debian-arm-and-brother-dcp195c-with-cups) should be fine and maybe [this](https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=127401) can help too. [Here](Brother_DCP-115C.ppd) is my ppd file
 * Unpack and install [433Mhz_Utils](https://github.com/ninjablocks/433Utils/tree/master/RPi_utils) in your home directory, ensure that the 433Mhz module is working with it and find out your remote code, as described here [here](https://www.princetronics.com/how-to-read-433-mhz-codes-w-raspberry-pi-433-mhz-receiver/)
   
 ### Installation
