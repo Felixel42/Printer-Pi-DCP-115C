@@ -1,4 +1,5 @@
 # Printer-Pi-DCP-115C
+![printer pi](/img/cups-printer-pi.jpg)
 Cups network printserver with a Raspberry Pi 2/3, Brother DCP-115C and 433Mhz wireless sockets. With the following upgrade my old reliable printer has now basic network printer functionalities and is more environmentally friendly.
 
 ## What does this documention provide ?
