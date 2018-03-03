@@ -47,9 +47,59 @@ sudo python Printer_ON_Check.py
 sudo python Printer_OFF_Check.py
 ```
 
-#### Tea4Cups
+#### Tea4CUPS 
+Is an open-source tool which allows you to define hooks before and after data was sent to cups. Instructions from [Gorsvet](https://gorsvet.de/komfortabel-drucken-mit-dem-raspberry-pi-und-cups/)
+1. Download and unzip Tea4Cups
+```
+wget http://www.pykota.com/software/tea4cups/download/tarballs/tea4cups-3.12_official.tar.gz 
+gunzip -c tea4cups-3.12_official.tar.gz | tar xvf -
+```
 
-Prehook tea4Cups: prehook_POWERON : python /home/pi/Documents/Scripts/Printer/Printer_ON_Check.py
+2. Edit tea4cups.conf with an editor. Add the following line with the location of the script files to the prehook section and save the file. As result the ON script will be executed before cups starts to send data to the printer. 
+```
+prehook_POWERON : python /home/pi/Documents/Scripts/Printer/Printer_ON_Check.py
+```
+
+3. Move files to folders
+```
+sudo mv tea4cups.conf /etc/cups
+sudo mv tea4cups /usr/lib/cups/backend/
+cd /usr/lib/cups/backend/
+sudo chown root tea4cups
+sudo chmod +x
+```
+
+4. Set up cups
+```
+cd /etc/cups
+sudo cp printers.conf printers.conf.O // backup old configuration
+sudo nano /etc/cups/printers.conf
+```
+
+Change from 
+```
+DeviceURI usb://Brother/DCP-115C?serial=BROH6F900919
+```
+
+To
+```
+DeviceURI tea4cups://usb://Brother/DCP-115C?serial=BROH6F900919
+```
+Restart cups
+```
+sudo /etc/init.d/cups restart
+```
+
+#### Cron
+Now everytime cups receives a new print job, it will automatically trigger the execution of the ON script. But we also want to turn off the printer after a certain time period if it is in an idle state.
+
+Add a Cron job which triggers the execution of the OFF script
+```
+crontab -e
+#checks every 15 minutes if printer is on/still working
+*/15 * * * * sudo python /home/pi/Documents/Scripts/Printer/Printer_OFF_Check.py
+```
+Now everything is ready to start printing. 
 
 ## Usage
 
