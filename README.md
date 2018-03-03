@@ -107,7 +107,8 @@ Now everything is ready to start printing.
 Depending on the cups settings, I experienced that Ubuntu worked out of the box with "ipps"
 
 **Windows:**
-
+Maybe you have to download additional drivers with windows update
+![Windows10_Installation](img/Windows10_setup.gif)
 
 ## Contributing/Support
 If you have any additions or problems regarding this guide, just open an issue or send me a pm.
