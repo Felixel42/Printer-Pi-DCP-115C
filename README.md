@@ -5,20 +5,20 @@ Cups network printserver with a Raspberry Pi 2/3, Brother DCP-115C and 433Mhz wi
 
 ## Table of contents
 
-    * [Table of contents](#table-of-contents)
-    * [What does this documention provide?](#what-does-this-documention-provide)
-    * [Getting Started](#getting-started)
-        * [Parts](#parts)
-        * [Prerequisites](#prerequisites)
-        * [Installation](#installation)
-          * [Send module](#send-module)
-          * [Printer status checks](#printer-status-checks)
-          * [Tea4CUPS](#tea4cups)
-          * [Cron](#cron)
-    * [Usage](#usage)
-    * [Contributing/Support](#contributingsupport)
-    * [License](#license)
-    * [Acknowledgments](#acknowledgments)
+* [Table of contents](#table-of-contents)
+* [What does this documention provide?](#what-does-this-documention-provide)
+* [Getting Started](#getting-started)
+  * [Parts](#parts)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+      * [Send module](#send-module)
+      * [Printer status checks](#printer-status-checks)
+      * [Tea4CUPS](#tea4cups)
+      * [Cron](#cron)
+* [Usage](#usage)
+* [Contributing/Support](#contributingsupport)
+* [License](#license)
+* [Acknowledgments](#acknowledgments)
 
 ## What does this documention provide?
 
