@@ -50,13 +50,13 @@ You should have some basic experience in creating projects with a Raspberry Pi, 
 
 1. Copy [steuerung](/scripts/steuerung.cpp) (Template from: [Raspberry Pi Tutorials](https://tutorials-raspberrypi.de/raspberry-pi-funksteckdosen-433-mhz-steuern/)) into the /433Utils/RPI_utils in the home directory and insert your remote codes.
 
-2.Compile it with:
+2. Compile it with:
 
 ``` bash
 g++ -DRPI ../rc-switch/RCSwitch.cpp steuerung.cpp -o steuerung -lwiringPi
 ```
 
-3.Try it out with:
+3. Try it out with:
 
 ``` bash
 sudo ./steuerung 1
@@ -89,13 +89,13 @@ wget http://www.pykota.com/software/tea4cups/download/tarballs/tea4cups-3.12_off
 gunzip -c tea4cups-3.12_official.tar.gz | tar xvf -
 ```
 
-2.Edit tea4cups.conf with an editor. Add the following line with the location of the script files to the prehook section and save the file. As result the ON script will be executed before cups starts to send data to the printer.
+2. Edit tea4cups.conf with an editor. Add the following line with the location of the script files to the prehook section and save the file. As result the ON script will be executed before cups starts to send data to the printer.
 
 ``` bash
 prehook_POWERON : python /home/pi/Documents/Scripts/Printer/Printer_ON_Check.py
 ```
 
-3.Move files to folders
+3. Move files to folders
 
 ``` bash
 sudo mv tea4cups.conf /etc/cups
@@ -105,7 +105,7 @@ sudo chown root tea4cups
 sudo chmod +x
 ```
 
-4.Set up cups
+4. Set up cups
 
 ``` bash
 cd /etc/cups
